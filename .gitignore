@@ -1,56 +1,31 @@
-# Dependency directories
 node_modules/
-vendor/
-.venv/
-venv/
-env/
 
-# Build outputs
-dist/
-build/
+# Output
+.output/
+.vercel/
+.netlify/
+.wrangler/
+/.svelte-kit/
+/build/
 coverage/
-.cache/
-.parcel-cache/
-.next/
-out/
+dist/
 
-# Logs
-*.log
+# Package manager
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 
-# Environment files
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.*
+!.env.example
+!.env.test
 
-# IDE and editor settings
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon?
-._*
-.Spotlight-V100
-.Trashes
-
-# Windows
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Linux
-*~
-.fuse_hidden*
-
-# Archives
-*.zip
-*.tar
-*.gz
-*.rar
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

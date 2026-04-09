@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+:root {
+	--bg-start: #fff4d6;
+	--bg-end: #ffd2c7;
+	--accent: #0f766e;
+	--accent-strong: #134e4a;
+}
+
+html {
+	background:
+		radial-gradient(circle at top left, rgb(255 255 255 / 85%), transparent 35%),
+		linear-gradient(135deg, var(--bg-start), var(--bg-end));
+	background-attachment: fixed;
+	font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	color: #1f2937;
+}
+
+@keyframes float-in {
+	from {
+		opacity: 0;
+		transform: translateY(24px) scale(0.98);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
